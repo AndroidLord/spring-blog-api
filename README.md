@@ -12,15 +12,15 @@ I developed a **Blog API** using **Spring Boot**, **Spring JPA**, **Lombok**, an
 - **Database:** PostgreSQL is used as the database for storing all the data.
 
 
-### Key Features
+## Key Features
 
-1. **User Authentication and Authorization**:
+### 1. **User Authentication and Authorization**:
    - Users can register and authenticate using JWT, which secures the API endpoints.
    - Example API Paths:
      - **Register User**: `POST http://localhost:8080/api/v1/auth/register`
      - **Authenticate User**: `POST http://localhost:8080/api/v1/auth/authenticate`
 
-2. **Blog Management**:
+### 2. **Blog Management**:
    - **Create, Read, Update, and Delete (CRUD)** operations are provided for blogs.
    - Additional functionalities include:
      - **Publish or Archive Blogs**: Blogs can be published or archived based on user actions.
@@ -34,7 +34,7 @@ I developed a **Blog API** using **Spring Boot**, **Spring JPA**, **Lombok**, an
      - **Update Blog**: `PUT http://localhost:8080/api/v1/blogs/{blog-id}`
      - **Delete Blog**: `DELETE http://localhost:8080/api/v1/blogs/{blog-id}`
 
-3. **Comment Management**:
+### 3. **Comment Management**:
    - Users can add, view, and delete comments on blog posts.
    - Additional functionalities include:
      - **Liking/Disliking Comments**: Users can express their opinions on comments.
@@ -43,7 +43,7 @@ I developed a **Blog API** using **Spring Boot**, **Spring JPA**, **Lombok**, an
      - **Create Comment**: `POST http://localhost:8080/api/v1/blogs/{blog-id}/comments`
      - **Get All Comments**: `GET http://localhost:8080/api/v1/blogs/{blog-id}/comments`
 
-4. **Like/Dislike Feature**:
+### 4. **Like/Dislike Feature**:
    - Users can like or dislike blogs and comments, providing interactive feedback mechanisms.
    - Example API Paths:
      - **Like Blog**: `POST http://localhost:8080/api/v1/blogs/{blog-id}/like`
@@ -51,7 +51,7 @@ I developed a **Blog API** using **Spring Boot**, **Spring JPA**, **Lombok**, an
      - **Like Comment**: `POST http://localhost:8080/api/v1/blogs/{blog-id}/comments/{comment-id}/like`
      - **Dislike Comment**: `DELETE http://localhost:8080/api/v1/blogs/{blog-id}/comments/{comment-id}/dislike`
 
-### Technical Stack
+## Technical Stack
 
 - **Backend Framework**: Spring Boot
 - **Data Persistence**: Spring JPA (Java Persistence API)
@@ -59,5 +59,3 @@ I developed a **Blog API** using **Spring Boot**, **Spring JPA**, **Lombok**, an
 - **Database**: PostgreSQL
 - **Utilities**: Lombok for reducing boilerplate code
 - **Pagination**: Implemented across various endpoints to manage large data sets efficiently
-
-This project demonstrates a comprehensive approach to building a secure, scalable, and feature-rich blog platform with a clear focus on user management and content interaction.
